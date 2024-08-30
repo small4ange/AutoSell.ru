@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Кодировка-->
+    <meta charset="UTF-8">
+    <!--Легкий поиск для пользователя-->
+    <meta name = "author" content = "Волкова Екатерина">
+    <meta name = "keywords" content = "машина, кредит, рассчет кредита, выбор машины, тест">
+    <meta name = "description" content = "AutoSell">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Название страницы-->
+    <title>Профиль - AutoSell.ru</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "CSS/Profile.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="toggle-button" onclick = "openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>Меню</li>
+            <li><a class = "header-link" href="index.php" target="_self" title = "Главная">Главная</a></li>
+            <li><a class = "header-link" href="AboutUs.html" target="_self" title = "О нас">О нас</a></li>
+            <li><a class = "header-link" href="LoanCalculation.html" target="_self" title = "Рассчет кредита">Рассчет кредита</a></li>
+            <li><a class = "header-link" href="Test.html" target="_self" title = "Тест">Тест</a></li>
+            <li><a class = "header-link" href="Favorites.html" target="_self" title = "Избранное">Избранное</a></li>
+            <li> <a class = "header-link" href="Profile.html" target="_self" title = "Профиль">Профиль</a></li>
+        </ul>
+    </div>
+    <!--Шапка сайта-->
+    <header>
+        <div class = "header">
+        <img id = "logo" src="images/лого 3 сайт-01.png" width = "4%" alt="Логотип">
+        <b>AutoSell</b>
+        <span>
+            <span>
+                <a class = "header-link" href="index.php" target="_self" title = "Главная">Главная</a>
+            </span>
+            <span>
+                <a class = "header-link" href="AboutUs.html" target="_self" title = "О нас">О нас</a>
+            </span>
+            <span>
+                <a class = "header-link" href="LoanCalculation.html" target="_self" title = "Рассчет кредита">Рассчет кредита</a>
+            </span>
+            <span>
+                <a class = "header-link" href="Test.html" target="_self" title = "Тест">Тест</a>
+            </span>
+            <span>
+                <a class = "header-link" href="Catalog.html" target="_self" title = "Каталог">Каталог</a>
+            </span>
+            <span>
+                <a class = "header-link" href="Favorites.html" target="_self" title = "Избранное">Избранное</a>
+            </span>
+            <span>
+                <a class = "header-link" href="Profile.html" target="_self" title = "Профиль">Профиль</a>
+            </span>
+        </span>
+        </div>
+    </header>
+    <!--Текст страницы профиля-->
+        <div id = "first-image">
+            <h1 id = "head-text">Профиль</h1>
+            <!--<img id = "automobile" src = "images/automobile.jpg">-->
+        </div>
+        <div class = "container1">
+        <div class="login">
+            <input class="login-input" id="login_user_name" type="text" placeholder="Имя">
+            <input class="login-input" id="login_user_email" type="text" placeholder="Логин (Email)">
+            <input class="login-input" id="login_user_password" type="password" placeholder="Пароль">
+            <button id="login-button">Вход</button>
+            <div id="login-message"></div>
+        </div>
+        <div id="user-profile">
+            <p id="user-name"></p>
+            <p id="user-email"></p>
+            <button id="logout-button" class = "button">Выход</button>
+        </div>
+    </div>
+        
+               
+        
+    <!--Текст в конце страницы-->
+    <footer>
+        <a class = "footer-link" href="mailto:katrinavolk37695@gmail.com">Написать на почту</a>
+        <p></p>
+        <p>Контакты</p>
+        <p>+ 7 (917) 878-31-21</p>
+    </footer>
+    <script src = 'JS/Login.js'></script>
+    <script src = 'JS/Menu.js'></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('userId')) {
+                document.getElementById('user-name').textContent = 'Имя пользователя: ' + localStorage.getItem('userName');
+                document.getElementById('user-email').textContent = 'Email: ' + localStorage.getItem('userEmail');
+            }
+    
+            document.getElementById('logout-button').addEventListener('click', function() {
+                localStorage.clear(); // Очищаем данные сессии
+                window.location.href = '/Курсовая_сайт/Profile.html'; // обновление
+            });
+        });
+    </script>
+</body>
+
+</html>

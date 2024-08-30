@@ -1,0 +1,310 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+/*прямоугольник посередине*/
+.container1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: 90%;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 0px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 2% 5%;
+}
+/*шапка*/
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background-color: white;
+    height: 55px;
+    /* padding: 0px 50px 20px; */
+    /* margin: 0% 5% 0% 5%; */
+
+}
+header img {
+    margin: 0% 0% 0% 5%;
+}
+header span {
+    position: relative;
+    left:400px;
+    margin: 0% 10px 0% 0%;
+
+}
+#logo {
+    margin: 0 0 5px 5%;
+}
+
+/*ссылки на все страницы сайта*/
+.header-link {
+    color: black;
+    text-decoration: none;
+}
+/*что будет при наведении на ссылку*/
+.header-link:hover {
+    color:rgba(56, 70, 197, 1)
+}
+/*главный заголовок*/
+#head-text {
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 800;
+    font-size: 500%;
+    color: white;
+    margin: 0% 5% 0% 0%;
+    
+}
+/*обычный текст страницы*/
+.content {
+    color: black;
+    cursor: default;
+}
+/*выделенный цветом текст*/
+.colorful {
+    color: rgba(56, 70, 197, 1);
+}
+
+
+#first-image {
+    height: 500px;
+    margin: 0% 5% 0% 5% ;
+    margin-top: 50px;
+    background-image:url("D:/работы мои/Курсовая сайт/images/automobile.png");
+}
+/*ввод*/
+input { 
+    color: grey;
+}
+/*что будет при использовании ввода*/
+input:focus {
+    color: rgba(56, 70, 197, 1);
+    border: none;
+}
+/*для обозначения пунктов - стиль цифр*/
+h2.home-h2::first-letter{
+    color: rgba(56, 70, 197, 1);
+}
+/*h2 заголовки*/
+.home-h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+/*Нижняя часть сайта*/
+footer {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    max-height: calc(100vh - 100px);
+    padding: 20px;
+    margin: 0% 5% 0% 10%;
+}
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+.footer-link:hover{
+    color: rgba(56, 70, 197, 1);
+}
+/* Блоки с выбором фильтров */
+.question {
+    display: inline-block;
+}
+/* Выпадающие списки с фильтром */
+.answer {
+    width: 100%;
+    height: 60px;
+    margin-left: 20px;
+    border-radius: 20px;
+    font-size: 120%;
+    padding: 0 10%;
+    margin: 2%;
+}
+.answer:disabled {
+    width: 100%;
+    height: 60px;
+    margin-left: 20px;
+    border-radius: 20px;
+    font-size: 120%;
+    padding: 0 10%;
+    margin: 2%;
+}
+/*Регистрация*/
+.registration {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: 70%;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgba(153, 152, 249, 1);
+    padding: 2% 5%;
+}
+.registration-input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: 98%;
+    height:50px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 5px;
+    
+}
+.registration-input :focus {
+    border: none;
+}
+#registration-button {
+    font-size: 150%;
+    width: 98%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: white;
+    background-color: rgba(56, 70, 197, 1);
+    padding: 5px 5px 10px 10px;
+}
+/* Кнопка посмотреть машины */
+#result {
+    font-size: 150%;
+    width: 70%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgba(56, 70, 197, 1);
+    padding: 5px 5px 10px 10px;
+}
+/*Меню*/
+#sidebar {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    position: fixed;
+    width:250px;
+    background-color: black;
+    border: 4px solid black;
+    border-radius: 20px;
+    color: white;
+    left:-260px;
+
+    -moz-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+#sidebar ul li:not(:first-child){
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: 90%;
+    margin-left: 10%;
+    font-size: 1.1 em;
+    color: white;
+    list-style: none;
+    padding:15px 10px;
+
+}
+#sidebar ul li:first-child{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    color:rgba(56, 70, 197, 1);
+    font-size:2.2em;
+    list-style:none;
+    padding: 20px 10px 10px 20px;
+}
+#sidebar ul li a{
+    color:white;
+    text-decoration: none;
+}
+#sidebar ul li a:hover {color:rgba(56, 70, 197, 1);}
+#sidebar .toggle-button {
+    position: absolute;
+    left:270px;
+    top:20px;
+    background-color: rgba(56, 70, 197, 1);
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#sidebar .toggle-button span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 12px;
+}
+#sidebar .toggle-button:hover {
+    background-color: white;
+    border-color: rgba(56, 70, 197, 1);
+}
+#sidebar .toggle-button:hover span {
+    background-color: rgba(56, 70, 197, 1);
+}
+#sidebar.active {
+    left: 0px;
+}
+
+#test-button {
+    font-size: 150%;
+    width: 70%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: rgba(56, 70, 197, 1);
+    padding: 5px 5px 10px 10px;
+}
+
+#automobiles{
+    display: flex;
+    flex-wrap: wrap;
+}
+#automobiles div img{
+    border-radius: 20px;
+    
+    margin: auto;
+    margin-bottom: 15px;
+    
+    height: auto;
+    width: 300px;
+    display: block;
+}
+#automobiles div {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+#automobiles div button{
+    bottom: 15px;
+    margin: 5px 5px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 10px;
+    color:white;
+    background-color: rgba(56, 70, 197, 1);
+    border: none;
+    /* */
+}
